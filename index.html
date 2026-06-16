@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ricardo Tamietti Jardim | Psicólogo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    color:#2d3748;
+    background:#f8fafc;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 24px;
+}
+
+.logo{
+    font-size:1.1rem;
+    font-weight:700;
+    color:#2c5282;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:24px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#4a5568;
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px;
+    background:
+    linear-gradient(rgba(44,82,130,.75),
+    rgba(44,82,130,.75)),
+    url('https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2c5282;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+    margin:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.2rem;
+    color:#2c5282;
+}
+
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.card h3{
+    color:#2c5282;
+    margin-bottom:15px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.whatsapp{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+footer{
+    background:#1a202c;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">Ricardo Tamietti Jardim</div>
+
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<div class="hero-content">
+<h1>Psicoterapia para uma vida mais consciente e equilibrada</h1>
+
+<p>
+Um espaço de acolhimento, escuta e desenvolvimento pessoal,
+respeitando a singularidade da sua história.
+</p>
+
+<a class="btn" href="#contato">Agendar Consulta</a>
+<a class="btn" href="#servicos">Conhecer Serviços</a>
+</div>
+</section>
+
+<section id="sobre">
+<div class="container">
+
+<div class="section-title">
+<h2>Sobre Mim</h2>
+</div>
+
+<div class="about">
+<p>
+Acredito que o processo terapêutico é um encontro humano capaz de
+promover autoconhecimento, fortalecimento emocional e transformação.
+Meu trabalho busca oferecer um ambiente seguro, ético e acolhedor,
+onde cada pessoa possa compreender sua história e construir novos
+caminhos para sua vida.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="servicos">
+<div class="container">
+
+<div class="section-title">
+<h2>Serviços</h2>
+</div>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>Psicoterapia Individual</h3>
+<p>
+Atendimento para adultos em busca de autoconhecimento,
+crescimento pessoal e saúde emocional.
+</p>
+</div>
+
+<div class="card">
+<h3>Ansiedade e Estresse</h3>
+<p>
+Acompanhamento para desenvolver recursos emocionais
+e ampliar o equilíbrio psicológico.
+</p>
+</div>
+
+<div class="card">
+<h3>Relacionamentos</h3>
+<p>
+Reflexão e apoio para questões afetivas,
+familiares e interpessoais.
+</p>
+</div>
+
+<div class="card">
+<h3>Atendimento Online</h3>
+<p>
+Sessões seguras e práticas para pacientes
+de qualquer localidade.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="galeria">
+<div class="container">
+
+<div class="section-title">
+<h2>Ambiente Terapêutico</h2>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</div>
+</section>
+
+<section id="contato">
+<div class="container">
+
+<div class="section-title">
+<h2>Contato</h2>
+</div>
+
+<div class="contact">
+
+<p><strong>Psicólogo Ricardo Tamietti Jardim</strong></p>
+
+<p>CRP: 04/35326</p>
+
+<p>Email: SEU_EMAIL</p>
+
+<p>Instagram: @SEU_INSTAGRAM</p>
+
+<a class="whatsapp"
+href="https://wa.me/55SEU_NUMERO?text=Olá%20Ricardo,%20gostaria%20de%20agendar%20uma%20consulta.">
+Agendar pelo WhatsApp
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>
+© 2026 Ricardo Tamietti Jardim - Psicólogo | Todos os direitos reservados
+</p>
+</footer>
+
+</body>
+</html>
